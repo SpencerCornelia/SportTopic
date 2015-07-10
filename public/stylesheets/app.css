@@ -1,0 +1,23 @@
+html {
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+#pgBattle {
+	background-image: url("http://i.imgur.com/ONotAUO.jpg");
+	width: 300px;
+	height: 500px;
+}
+
+#betterTeam {
+	background-image: url("http://i.imgur.com/JCEDGeQ.jpg");
+	width: 300px;
+	height: 500px;
+}
+
+#sgBattle {
+	background-image: url("http://i.imgur.com/ZXAnsa1.jpg");
+	width: 300px;
+	height: 500px;	
+}
