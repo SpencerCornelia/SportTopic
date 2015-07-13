@@ -14,6 +14,10 @@ $(function() {
 		$chat.append(data + "</br>");
 	})
 
-
+	$("#usersBtn").on("click", function() {
+		$.get("/users", function (res) {
+			$("#signedInUsers").append("<p>" + res + "</p></br>")
+		})
+	})
 
 }); 
