@@ -11,7 +11,10 @@ var io = require("socket.io").listen(server);
 var d3 = require("d3");
 var usersArray = [];
 
-app.use(express.static("public"));
+app.use(function(){
+	console.log(arguments);
+	express.static("public").apply(express, arguments, arguments[1].headers)
+});
 app.use(express.static("bower_components"));
 
 app.use(bodyParser.urlencoded({extended: true}));

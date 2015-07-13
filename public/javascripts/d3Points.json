@@ -1,4 +1,4 @@
-var cp3 = [
+[
     {
         "season": "2005-06-01T07:00:00.000Z",
         "age": 20,
@@ -357,12 +357,4 @@ var cp3 = [
         "undefined": 23.1
     }
 ]
-
-var svgContainer = d3.select("body").append("svg")
-                                    .attr("width", 200)
-                                    .attr("height", 200);
-
-var circles = svgContainer.selectAll("circle")
-                          .data(cp3[0].per)
-                          .enter()
-                          .append(circles)                                     
+                                   
