@@ -95,7 +95,12 @@ app.get("/topics/2", function (req, res) {
 app.get("/d3PointGuard", function (req, res) {
 	var thisPath = path.join(views, "d3PointGuard.html");
 	res.sendFile(thisPath);
-})
+});
+
+app.get("/d3PointsPointGuard", function (req, res) {
+	var thisPath = path.join(views, "d3PointsPointGuard.html");
+	res.sendFile(thisPath);
+});
 
 io.sockets.on("connection", function(socket) {
 	socket.on("send message", function(data) {

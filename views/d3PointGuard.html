@@ -1,17 +1,124 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>D3 Example</title>
+    <title>trying out d3</title>
     <script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
-    
+    <link href="/stylesheets/d3PointGuard.css">
+     <style>
+      .axis text {
+      	font-family: "Poiret One", cursive;
+      	font-size: 16pt;
+      }
+
+      .axis .label {
+      	font-size: 20pt;
+      }
+
+      .axis path, .axis line {
+      	fill: none;
+      	stroke: #000;
+      }
+
+    </style>
+
   </head>
   <body>
-
+<div>
+	<h6>Blue : Chris Paul</h6>
+	<h6>Yellow : Magic Johnson</h6>
+	<h6>Green : Oscar Robertson</h6>
+	<h6>Red : John Stockton</h6>
+</div>
 <script>
-d3.json("/javascripts/d3Points.json", function(data) {
-	console.log(data);
-})                                                                                     
+
+	var outerWidth = 900;
+	var outerHeight = 400;
+	var margin = { left: 100, top: 50, right: 10, bottom: 60 };
+	var rMin = 0;
+	var rMax = 10;
+	var xColumn = "year";
+	var yColumn = "per";
+	var rColumn = "per";
+	var colorColumn = "player";
+
+	var color = d3.scale.ordinal()
+      .domain(["Chris Paul", "Magic Johnson"])
+      .range(["#FF0000", "#009933"]);
+
+	var xAxisLabelText = "Year of Career";
+	var xAxisLabelOffset = 60;
+
+	var yAxisLabelText = "PER";
+	var yAxisLabelOffset = 50;
+
+	var innerWidth = outerWidth - margin.left - margin.right;
+	var innerHeight = outerHeight - margin.top - margin.bottom;
+
+	var svg = d3.select("body").append("svg")
+	    .attr("width", outerWidth)
+	    .attr("height", outerHeight);
+
+    var g = svg.append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");	 
+
+    var xAxisG = g.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + innerHeight + ")");
+    var xAxisLabel = xAxisG.append("text")
+        .style("text-anchor", "middle")
+        .attr("x", innerWidth / 2)
+        .attr("y", xAxisLabelOffset)
+        .attr("class", "label")
+        .text(xAxisLabelText);    
+    var yAxisG = g.append("g")
+        .attr("class", "y axis")
+    var yAxisLabel = yAxisG.append("text")
+        .style("text-anchor", "middle")
+        .attr("transform", "translate(-" + yAxisLabelOffset + "," + (innerHeight / 2) + ") rotate(-90)")
+        .attr("class", "label")
+        .text(yAxisLabelText);               
+
+	var xScale = d3.scale.linear().range([0, innerWidth]);
+	var yScale = d3.scale.linear().range([innerHeight, 0]);
+	var rScale = d3.scale.linear().range([rMin, rMax]);
+	var colorScale = d3.scale.category10();
+
+	var xAxis = d3.svg.axis().scale(xScale).orient("bottom")
+	    .ticks(5)
+	    .tickFormat(d3.format("s"))
+	    .outerTickSize(1);
+	var yAxis = d3.svg.axis().scale(yScale).orient("left")
+	    .ticks(10)
+	    .tickFormat(d3.format("s"))
+	    .outerTickSize(2);    
+
+	function render(data) {
+		xScale.domain(d3.extent(data, function(d){ return d[xColumn]; }));
+	    yScale.domain(d3.extent(data, function(d){ return d[yColumn]; }));
+	    rScale.domain([0, d3.max(data, function(d){ return d[rColumn]; })]);
+
+	    xAxisG.call(xAxis);
+	    yAxisG.call(yAxis);
+		
+		var circles = g.selectAll("circle").data(data);
+		circles.enter().append("circle");
+		circles 
+		   .attr("cx", function (d) { return xScale(d[xColumn]); })
+		   .attr("cy", function (d) { return yScale(d[yColumn]); })
+		   .attr("r", function (d) { return rScale(d[rColumn]); })
+		   .attr("fill", function (d) {	return colorScale(d[colorColumn]); });
+		circles.exit().remove();   
+	}
+
+	function type(d) {
+		d.year = +d.year;
+		d.per = +d.per;
+		return d;
+	}
+
+	d3.csv("/javascripts/cp3Data.csv", type, render);
 </script>
+
  
   </body>
 </html>
