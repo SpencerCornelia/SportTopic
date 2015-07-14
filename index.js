@@ -102,6 +102,11 @@ app.get("/d3PointsPointGuard", function (req, res) {
 	res.sendFile(thisPath);
 });
 
+app.get("/d3WSPointGuard", function (req, res) {
+	var thisPath = path.join(views, "d3WSPointGuard.html");
+	res.sendFile(thisPath);
+});
+
 io.sockets.on("connection", function(socket) {
 	socket.on("send message", function(data) {
 		io.sockets.emit("new message", data);

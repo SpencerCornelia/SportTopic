@@ -1,0 +1,200 @@
+{
+ "name": "Point Guards",
+ "children": [
+
+  {
+   "name": "John Stockton",
+   "children": [
+    {
+     "name": "Win Shares",
+     "children": [
+     {"name": "3.1", "size": 1500},
+     {"name": "5.9", "size": 1500},
+     {"name": "6.7", "size": 1500},
+     {"name": "14.1", "size": 1500},
+     {"name": "15.6", "size": 1500},
+     {"name": "14.4", "size": 1500},
+     {"name": "14.0", "size": 1500},
+     {"name": "13.4", "size": 1500},
+     {"name": "10.6", "size": 1500},
+     {"name": "13.2", "size": 1500},
+     {"name": "10.6", "size": 1500},
+     {"name": "13.2", "size": 1500},
+     {"name": "13.9", "size": 1500},
+     {"name": "13.0", "size": 1500},
+     {"name": "13.6", "size": 1500},
+     {"name": "8.0", "size": 1500},
+     {"name": "6.4", "size": 1500},
+     {"name": "11.2", "size": 1500},
+     {"name": "10.8", "size": 1500},
+     {"name": "10.7", "size": 1500},
+     {"name": "9.0", "size": 1500}
+     ]
+    },
+    {
+     "name": "BPM AVG.",
+     "children": [
+     {"name": "19711", "size": 1500}
+     ] 
+      },
+    {
+      "name": "OBPM AVG.", 
+      "children": [
+      {"name": "82.6%", "size": 1500}
+      ]
+    },
+    {
+      "name": "DBPM AVG.",
+      "children": [
+      {"name": "54.1%", "size": 1500}
+      ]
+    },
+    {
+     "name": "Total VORP",
+     "children": [
+     {"name": "38.4%", "size": 1500}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Oscar Robertson",
+   "children": [
+    {
+     "name": "Win Shares",
+     "children": [
+     {"name": "13.2", "size": 1500},
+     {"name": "15.6", "size": 1500},
+     {"name": "16.8", "size": 1500},
+     {"name": "20.6", "size": 1500},
+     {"name": "17.0", "size": 1500},
+     {"name": "16.9", "size": 1500},
+     {"name": "17.4", "size": 1500},
+     {"name": "12.3", "size": 1500},
+     {"name": "12.9", "size": 1500},
+     {"name": "11.4", "size": 1500},
+     {"name": "12.4", "size": 1500},
+     {"name": "8.3", "size": 1500},
+     {"name": "8.4", "size": 1500},
+     {"name": "5.9", "size": 1500}
+     ]
+    },
+    {
+      "name": "BPM",
+      "children": [
+      {"name": "n/a", "size": 1500}
+      ]
+      },
+    {
+      "name": "OBPM",
+      "children": [
+      {"name": "n/a", "size": 1500}
+      ]
+    },
+    {
+      "name": "DBPM",
+      "children": [
+      {"name": "n/a", "size": 1500}
+      ]
+    },
+    {
+      "name": "Total VORP",
+      "children": [
+      {"name": "n/a", "size": 1500}
+      ]
+  }
+   ]
+  },
+  {
+   "name": "Magic Johnson",
+   "children": [
+    {
+     "name": "Win Shares", 
+     "children": [
+     {"name": "10.5", "size": 1500},
+     {"name": "6.4", "size": 1500},
+     {"name": "12.9", "size": 1500},
+     {"name": "12.5", "size": 1500},
+     {"name": "10.2", "size": 1500},
+     {"name": "12.7", "size": 1500},
+     {"name": "12.1", "size": 1500},
+     {"name": "15.9", "size": 1500},
+     {"name": "10.9", "size": 1500},
+     {"name": "16.1", "size": 1500},
+     {"name": "16.5", "size": 1500},
+     {"name": "15.4", "size": 1500},
+     {"name": "3.6", "size": 1500}     
+     ]
+    },
+    {
+      "name": "Total VORP",
+      "children": [
+      {"name": "77.4", "size": 1500}
+      ]
+    },
+    {
+      "name": "DBPM AVG.",
+      "children": [
+      {"name": "1.5", "size": 1500}
+      ]
+    },
+    {
+      "name": "OBPM AVG.",
+      "children": [
+      {"name": "5.7", "size": 1500}
+      ]
+    },
+    {
+      "name": "BPM AVG.",
+      "children": [
+      {"name": "7.2", "size": 1500}
+      ]
+  }
+   ]
+  },
+  {
+   "name": "Chris Paul",
+   "children": [
+    {
+      "name": "BPM AVG.",
+      "children": [
+      {"name": "7.5", "size": 1500}
+      ]
+    },
+    {
+      "name": "OBPM AVG.",
+      "children": [
+      {"name": "6.8", "size": 1500}
+      ]
+    },
+    {
+      "name": "DBPM AVG.",
+      "children": [
+      {"name": "0.7", "size": 1500}
+      ]
+    },
+    {
+      "name": "Total VORP",
+      "children": [
+      {"name": "60.5", "size": 1500}
+      ]
+    },
+    {
+     "name": "Win Shares",
+     "children": [
+      {"name": "10.4", "size": 1500},
+      {"name": "8.8", "size": 1500},
+      {"name": "17.8", "size": 1500},
+      {"name": "18.3", "size": 1500},
+      {"name": "7.3", "size": 1500},
+      {"name": "13.9", "size": 1500},
+      {"name": "12.7", "size": 1500},
+      {"name": "13.9", "size": 1500},
+      {"name": "12.2", "size": 1500},
+      {"name": "16.1", "size": 1500}
+     ]
+    }
+   ]
+  }
+ ]
+}

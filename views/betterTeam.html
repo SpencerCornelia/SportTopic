@@ -76,20 +76,15 @@
 		<div class="col-xs-5">
 			<div class="row">
 				<div class="panel panel-default" style="height: 200px">
-					<a href="/betterTeam">First chart</a>
+					<a href="/d3RosterBetterTeam">First chart</a>
 				</div>		
 			</div>
 	<!-- logged in users -->
 			<div class="row">
 				<div class="panel panel-default" style="height: 340px">
-					    "Once users sign in or log in they will be rendered here -- need help with this"					
-					<script type="text/template" id="users-template">
-					    <% _.each(collection, function (item) { %>
-					        <ul class="list-user-item">
-					            <span class="label-user-name"><%= item.name %></span> 
-					        </ul>
-					    <% }); %>
-					</script>					
+					<ul id="signedInUsers">
+					</ul>
+					<button id="usersBtn">Who is logged in?</button>				
 				</div>		
 			</div>			
 		</div>		
