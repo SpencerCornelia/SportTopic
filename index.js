@@ -8,8 +8,13 @@ var express = require("express"),
 var app = express();
 var server = require("http").createServer(app);
 var io = require("socket.io").listen(server);
+var d3 = require("d3");
+var usersArray = [];
 
-app.use(express.static("public"));
+app.use(function(){
+	console.log(arguments);
+	express.static("public").apply(express, arguments, arguments[1].headers)
+});
 app.use(express.static("bower_components"));
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -49,6 +54,10 @@ app.get("/", function (req, res) {
 	res.sendFile(homePath);
 });  
 
+app.get("/users", function (req,res) {
+	res.send(usersArray);
+})
+
 app.post("/login", function (req,res) {
 	var user = req.body.user;
 
@@ -64,6 +73,7 @@ app.post("/signup", function (req,res) {
 	db.User.createSecure(newUser.name, newUser.password, function(err, user) {
 		if (user) {
 			req.login(user);
+			usersArray.push(user.name);			
 			res.redirect("/");
 		} else {
 			res.redirect("/error");
@@ -75,7 +85,22 @@ app.post("/signup", function (req,res) {
 app.get("/topics/1", function (req, res) {
 	var topicPath = path.join(views, "pointGuard.html");
 	res.sendFile(topicPath);
+});
+
+app.get("/topics/2", function (req, res) {
+	var thisPath = path.join(views, "betterTeam.html")
+	res.sendFile(thisPath);
 })
+
+app.get("/d3PointGuard", function (req, res) {
+	var thisPath = path.join(views, "d3PointGuard.html");
+	res.sendFile(thisPath);
+});
+
+app.get("/d3PointsPointGuard", function (req, res) {
+	var thisPath = path.join(views, "d3PointsPointGuard.html");
+	res.sendFile(thisPath);
+});
 
 io.sockets.on("connection", function(socket) {
 	socket.on("send message", function(data) {
