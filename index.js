@@ -87,7 +87,12 @@ app.get("/topics/1", function (req, res) {
 app.get("/topics/2", function (req, res) {
 	var thisPath = path.join(views, "betterTeam.html")
 	res.sendFile(thisPath);
-})
+});
+
+app.get("/topics/3", function (req, res) {
+	var thisPath = path.join(views, "sgBattle.html")
+	res.sendFile(thisPath);
+});
 
 app.get("/d3PointGuard", function (req, res) {
 	var thisPath = path.join(views, "d3PointGuard.html");
