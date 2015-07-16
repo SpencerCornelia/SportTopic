@@ -18,6 +18,7 @@
 <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
+	<!-- 
 	<div class="container">
 	    <div class="row">
 	        <div class="col-xs-6">
@@ -56,17 +57,27 @@
 	</div>
 	    </div>
 	</div>	
-
+-->
+<div class="container">
+	<div class="row" id="nickWrap">
+		<p>Enter a username: </p>
+		<p id="nickError"></p>
+		<form id="setNick">
+			<input size="35" id="nickname" autocomplete="off"></input>
+			<input type="submit"></input>
+		</form>
+	</div>
+</div>
 
 	<!-- Chat -->
 <div class="container">
-	<div class="row">	
+	<div class="row" id="chat">	
 		<div class="col-xs-7">
 			<div class="panel panel-default" style="height: 500px">
 				<div class="panel body">
-					<div id="chat" style="height: 420px"></div>
+					<div id="chat2" style="height: 420px"></div>
 						<form id="send-message">
-							<input id="message" style="height: 50px;width: 400px;margin-left: 40px"></input>
+							<input id="message" style="height: 50px;width: 400px;margin-left: 40px" autocomplete="off"></input>
 							<input type="submit"></input>
 						</form>	
 				</div>
@@ -84,9 +95,8 @@
 	<!-- logged in users -->
 			<div class="row">
 				<div class="panel panel-default" style="height: 340px">
-					<ul id="signedInUsers">
-					</ul>	
-					 <button id="usersBtn">Who is logged in?</button>								
+					<div id="signedInUsers">
+					</div>							
 				</div>		
 			</div>			
 		</div>		
