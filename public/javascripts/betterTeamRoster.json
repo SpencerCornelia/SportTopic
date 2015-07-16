@@ -1,0 +1,105 @@
+{
+ "name": "Teams",
+ "children": [
+
+  {
+   "name": "Rockets",
+   "children": [
+    {
+     "name": "Players",
+     "children": [
+     {"name": "James Harden", "size": 1500},
+     {"name": "Dwight Howard", "size": 1500},
+     {"name": "Patrick Beverley", "size": 1500},
+     {"name": "Donatas Motiejunas", "size": 1500},
+     {"name": "Clint Capela", "size": 1500},
+     {"name": "Corey Brewer", "size": 1500},
+     {"name": "Terrence Jones", "size": 1500},
+     {"name": "Trevor Ariza", "size": 1500},
+     {"name": "Jason Terry", "size": 1500},
+     {"name": "Kostas Papanikolaou", "size": 1500},
+     {"name": "Nick Johnson", "size": 1500},
+     {"name": "Pablo Prigioni", "size": 1500},
+     {"name": "Joey Dorsey", "size": 1500},
+     {"name": "K.J. McDaniels", "size": 1500},
+     {"name": "Josh Smith", "size": 1500},
+     {"name": "Francisco Garcia", "size": 1500}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Spurs",
+   "children": [
+    {
+     "name": "Players",
+     "children": [
+     {"name": "Kyle Anderson", "size": 1500},
+     {"name": "Jeff Ayres", "size": 1500},
+     {"name": "Aron Baynes", "size": 1500},
+     {"name": "Marco Belinelli", "size": 1500},
+     {"name": "Matt Bonner", "size": 1500},
+     {"name": "Austin Daye", "size": 1500},
+     {"name": "Boris Diaw", "size": 1500},
+     {"name": "Tim Duncan", "size": 1500},
+     {"name": "Manu Ginobili", "size": 1500},
+     {"name": "Danny Green", "size": 1500},
+     {"name": "Cory Joseph", "size": 1500},
+     {"name": "Kawhi Leonard", "size": 1500},
+     {"name": "Patrick Mills", "size": 1500},
+     {"name": "Tony Parker", "size": 1500},
+     {"name": "Tiago Splitter", "size": 1500}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Warriors",
+   "children": [
+    {
+     "name": "Players", 
+     "children": [
+     {"name": "Leandro Barbosa", "size": 1500},
+     {"name": "Harrison Barnes", "size": 1500},
+     {"name": "Andrew Bogut", "size": 1500},
+     {"name": "Stephen Curry", "size": 1500},
+     {"name": "Festus Ezeli", "size": 1500},
+     {"name": "Draymond Green", "size": 1500},
+     {"name": "Justin Holiday", "size": 1500},
+     {"name": "Andre Igoudala", "size": 1500},
+     {"name": "David Lee", "size": 1500},
+     {"name": "Shaun Livingston", "size": 1500},
+     {"name": "James Michael McAdoo", "size": 1500},
+     {"name": "Marreese Speights", "size": 1500},
+     {"name": "Klay Thompson", "size": 1500}     
+     ]
+    }
+   ]
+  },
+  {
+   "name": "LA Clippers",
+   "children": [
+    {
+     "name": "Players",
+     "children": [
+      {"name": "Matt Barnes", "size": 1500},
+      {"name": "Reggie Bullock", "size": 1500},
+      {"name": "Jamal Crawford", "size": 1500},
+      {"name": "Glen Davis", "size": 1500},
+      {"name": "Jordan Farmar", "size": 1500},
+      {"name": "Blake Griffin", "size": 1500},
+      {"name": "Jordan Hamilton", "size": 1500},
+      {"name": "Spencer Hawes", "size": 1500},
+      {"name": "DeAndre Jordan", "size": 1500},
+      {"name": "Chris Paul", "size": 1500},
+      {"name": "J.J. Redick", "size": 1500},
+      {"name": "Austin Rivers", "size": 1500},
+      {"name": "Nate Robinson", "size": 1500},
+      {"name": "Hedo Turkoglu", "size": 1500},
+      {"name": "Ekpe Udoh", "size": 1500}
+     ]
+    }
+   ]
+  }
+ ]
+}

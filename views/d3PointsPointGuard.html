@@ -23,10 +23,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script>
 
-var diameter = 960;
+var diameter = 1000;
 
 var tree = d3.layout.tree()
-    .size([360, diameter / 2 - 120])
+    .size([360, diameter / 2 - 60])
     .separation(function(a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
 
 var diagonal = d3.svg.diagonal.radial()
@@ -34,7 +34,7 @@ var diagonal = d3.svg.diagonal.radial()
 
 var svg = d3.select("body").append("svg")
     .attr("width", diameter)
-    .attr("height", diameter - 150)
+    .attr("height", diameter - 10)
   .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
