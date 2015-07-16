@@ -94,6 +94,11 @@ app.get("/topics/3", function (req, res) {
 	res.sendFile(thisPath);
 });
 
+app.get("/d3sgBattle", function (req, res) {
+	var thisPath = path.join(views, "d3sgBattle.html");
+	res.sendFile(thisPath);
+});
+
 app.get("/d3PointGuard", function (req, res) {
 	var thisPath = path.join(views, "d3PointGuard.html");
 	res.sendFile(thisPath);

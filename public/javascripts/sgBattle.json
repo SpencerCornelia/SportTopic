@@ -1,0 +1,197 @@
+{
+ "name": "Point Guards",
+ "children": [
+
+  {
+   "name": "John Stockton",
+   "children": [
+    {
+     "name": "Points Per Game",
+     "children": [
+     {"name": "5.6", "size": 1500},
+     {"name": "7.7", "size": 1500},
+     {"name": "7.9", "size": 1500},
+     {"name": "14.7", "size": 1500},
+     {"name": "17.1", "size": 1500},
+     {"name": "17.2", "size": 1500},
+     {"name": "17.2", "size": 1500},
+     {"name": "15.8", "size": 1500},
+     {"name": "15.1", "size": 1500},
+     {"name": "14.7", "size": 1500},
+     {"name": "14.7", "size": 1500},
+     {"name": "14.4", "size": 1500},
+     {"name": "12.0", "size": 1500},
+     {"name": "11.1", "size": 1500},
+     {"name": "12.1", "size": 1500},
+     {"name": "11.5", "size": 1500},
+     {"name": "13.4", "size": 1500},
+     {"name": "10.8", "size": 1500}
+     ]
+    },
+    {
+     "name": "Total Points",
+     "children": [
+     {"name": "19711", "size": 1500}
+     ] 
+      },
+    {
+      "name": "Free Throw %", 
+      "children": [
+      {"name": "82.6%", "size": 1500}
+      ]
+    },
+    {
+      "name": "2 Point %",
+      "children": [
+      {"name": "54.1%", "size": 1500}
+      ]
+    },
+    {
+     "name": "3 Point %",
+     "children": [
+     {"name": "38.4%", "size": 1500}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Oscar Robertson",
+   "children": [
+    {
+     "name": "Points Per Game",
+     "children": [
+     {"name": "30.5", "size": 1500},
+     {"name": "30.8", "size": 1500},
+     {"name": "28.3", "size": 1500},
+     {"name": "31.4", "size": 1500},
+     {"name": "30.4", "size": 1500},
+     {"name": "31.3", "size": 1500},
+     {"name": "30.5", "size": 1500},
+     {"name": "29.2", "size": 1500},
+     {"name": "24.7", "size": 1500},
+     {"name": "25.3", "size": 1500},
+     {"name": "19.4", "size": 1500},
+     {"name": "17.4", "size": 1500},
+     {"name": "15.5", "size": 1500},
+     {"name": "12.7", "size": 1500}
+     ]
+    },
+    {
+      "name": "Total Points",
+      "children": [
+      {"name": "26710", "size": 1500}
+      ]
+      },
+    {
+      "name": "Field Goal %",
+      "children": [
+      {"name": "48.5%", "size": 1500}
+      ]
+    },
+    {
+      "name": "2 Point %",
+      "children": [
+      {"name": "48.5%", "size": 1500}
+      ]
+    },
+    {
+      "name": "3 Point %",
+      "children": [
+      {"name": "n/a", "size": 1500}
+      ]
+  }
+   ]
+  },
+  {
+   "name": "Magic Johnson",
+   "children": [
+    {
+     "name": "Points Per Game", 
+     "children": [
+     {"name": "18", "size": 1500},
+     {"name": "21.6", "size": 1500},
+     {"name": "18.6", "size": 1500},
+     {"name": "16.8", "size": 1500},
+     {"name": "17.6", "size": 1500},
+     {"name": "18.3", "size": 1500},
+     {"name": "18.8", "size": 1500},
+     {"name": "23.9", "size": 1500},
+     {"name": "19.6", "size": 1500},
+     {"name": "22.5", "size": 1500},
+     {"name": "22.3", "size": 1500},
+     {"name": "19.4", "size": 1500},
+     {"name": "14.6", "size": 1500}     
+     ]
+    },
+    {
+      "name": "Total Points",
+      "children": [
+      {"name": "17707", "size": 1500}
+      ]
+    },
+    {
+      "name": "Free Throw %",
+      "children": [
+      {"name": "84.8%", "size": 1500}
+      ]
+    },
+    {
+      "name": "3 Point %",
+      "children": [
+      {"name": "30.3%", "size": 1500}
+      ]
+    },
+    {
+      "name": "2 Point %",
+      "children": [
+      {"name": "54.1%", "size": 1500}
+      ]
+  }
+   ]
+  },
+  {
+   "name": "Chris Paul",
+   "children": [
+    {
+      "name": "Total Points",
+      "children": [
+      {"name": "13060", "size": 1500}
+      ]
+    },
+    {
+      "name": "Free Throw %",
+      "children": [
+      {"name": "86.1%", "size": 1500}
+      ]
+    },
+    {
+      "name": "3 Point %",
+      "children": [
+      {"name": "36.4%", "size": 1500}
+      ]
+    },
+    {
+      "name": "2 Point %",
+      "children": [
+      {"name": "50.3%", "size": 1500}
+      ]
+    },
+    {
+     "name": "Points Per Game",
+     "children": [
+      {"name": "16.1", "size": 1500},
+      {"name": "17.3", "size": 1500},
+      {"name": "21.1", "size": 1500},
+      {"name": "22.8", "size": 1500},
+      {"name": "18.7", "size": 1500},
+      {"name": "15.9", "size": 1500},
+      {"name": "19.8", "size": 1500},
+      {"name": "16.9", "size": 1500},
+      {"name": "19.1", "size": 1500},
+      {"name": "19.1", "size": 1500}
+     ]
+    }
+   ]
+  }
+ ]
+}
