@@ -58,16 +58,26 @@
 	    </div>
 	</div>	
 -->
+<div class="container">
+	<div class="row" id="nickWrap">
+		<p>Enter a username: </p>
+		<p id="nickError"></p>
+		<form id="setNick">
+			<input size="35" id="nickname" autocomplete="off"></input>
+			<input type="submit"></input>
+		</form>
+	</div>
+</div>
 
 	<!-- Chat -->
 <div class="container">
-	<div class="row">	
+	<div class="row" id="chat">	
 		<div class="col-xs-7">
 			<div class="panel panel-default" style="height: 500px">
 				<div class="panel body">
-					<div id="chat" style="height: 420px"></div>
+					<div id="chat2" style="height: 420px"></div>
 						<form id="send-message">
-							<input id="message" style="height: 50px;width: 400px;margin-left: 40px"></input>
+							<input id="message" style="height: 50px;width: 400px;margin-left: 40px" autocomplete="off"></input>
 							<input type="submit"></input>
 						</form>	
 				</div>
@@ -83,14 +93,8 @@
 	<!-- logged in users -->
 			<div class="row">
 				<div class="panel panel-default" style="height: 340px">
-					    "Once users sign in or log in they will be rendered here -- need help with this"					
-					<script type="text/template" id="users-template">
-					    <% _.each(collection, function (item) { %>
-					        <ul class="list-user-item">
-					            <span class="label-user-name"><%= item.name %></span> 
-					        </ul>
-					    <% }); %>
-					</script>					
+					    <div id="signedInUsers">
+					    </div>										
 				</div>		
 			</div>			
 		</div>		
