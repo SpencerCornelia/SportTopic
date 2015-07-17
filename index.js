@@ -12,7 +12,7 @@ var d3 = require("d3");
 var nicknames = [];
 
 app.use(function(){
-	console.log(arguments);
+	// console.log(arguments);
 	express.static("public").apply(express, arguments, arguments[1].headers)
 });
 
