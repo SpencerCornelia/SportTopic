@@ -7,7 +7,6 @@ $(function() {
 	var $nickError = $("#nickError");
 	var $nickWrap = $("#nickWrap");
 	var $nickBox = $("#nickname");
-	var $chat = $("#chat");
 	var $users = $("#signedInUsers");
 
 	$chat.hide();
@@ -28,7 +27,7 @@ $(function() {
 	socket.on("usernames", function(data) {
 		var html = "";
 		for (var i = 0; i < data.length; i++) {
-			html += data[i] + "<br/>"
+			html += data[i] + "<br/>";
 		}
 		$users.html(html);
 	});
@@ -37,7 +36,7 @@ $(function() {
 		e.preventDefault();
 		socket.emit("send message", $messageBox.val());
 		$messageBox.val("");
-	})
+	});
 
 	socket.on("new message", function(data) {
 		$("#chat2").append("<b>" + data.nick + ": </b>" + data.msg + "</br>");
