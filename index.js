@@ -12,7 +12,6 @@ var d3 = require("d3");
 var nicknames = [];
 
 app.use(function(){
-	console.log(arguments);
 	express.static("public").apply(express, arguments, arguments[1].headers)
 });
 
@@ -152,6 +151,6 @@ io.sockets.on("connection", function(socket) {
 
 })
 
-server.listen(3000, function() {
+server.listen(process.env.PORT || 3000, function() {
 	console.log("running on localhost:3000");
 })
