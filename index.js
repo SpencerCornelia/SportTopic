@@ -8,25 +8,20 @@ var express = require("express"),
 var app = express();
 var server = require("http").createServer(app);
 var io = require("socket.io").listen(server);
-var d3 = require("d3");
 var nicknames = [];
 
-app.use(function(){
-	express.static("public").apply(express, arguments, arguments[1].headers);
-});
-
-app.use(express.static("bower_components"));
+app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(session({
-  secret: "super secret",
+  secret: "Spencer's sports secret",
   resave: false,
   saveUninitialized: true
 }));
 
-app.use("/", function (req, res, next) {
-
+var sessionHelp = function (req, res, next) {
+  
   req.login = function (user) {
     req.session.userId = user._id;
   };
@@ -45,7 +40,9 @@ app.use("/", function (req, res, next) {
   };
 
   next(); 
-});
+};	
+
+app.use(sessionHelp);
 
 var views = path.join(__dirname, "views");
 
