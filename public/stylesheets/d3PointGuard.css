@@ -1,0 +1,13 @@
+.axis text {
+	font-family: "Poiret One", cursive;
+	font-size: 16pt;
+}
+
+.axis .label {
+	font-size: 20pt;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: #000;
+}
