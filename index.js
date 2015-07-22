@@ -12,7 +12,7 @@ var d3 = require("d3");
 var nicknames = [];
 
 app.use(function(){
-	express.static("public").apply(express, arguments, arguments[1].headers)
+	express.static("public").apply(express, arguments, arguments[1].headers);
 });
 
 app.use(express.static("bower_components"));
@@ -42,12 +42,12 @@ app.use("/", function (req, res, next) {
   req.logout = function () {
     req.session.userId = null;
     req.user = null;
-  }
+  };
 
   next(); 
 });
 
-var views = path.join(__dirname, "views")
+var views = path.join(__dirname, "views");
 
 app.get("/", function (req, res) {
 	var homePath = path.join(views, "home.html");
@@ -60,8 +60,8 @@ app.post("/login", function (req,res) {
 	db.User.authenticate(user.name, user.password, function(err,user) {
 		req.login(user);
 		res.redirect("/");
-	})
-})
+	});
+});
 
 app.post("/signup", function (req,res) {
 	var newUser = req.body.user;
@@ -73,10 +73,10 @@ app.post("/signup", function (req,res) {
 			res.redirect("/");
 		} else {
 			res.redirect("/error");
-		}
+		};
 	})
 	req.currentUser();
-})
+});
 
 app.get("/topics/1", function (req, res) {
 	var topicPath = path.join(views, "pointGuard.html");
@@ -84,12 +84,12 @@ app.get("/topics/1", function (req, res) {
 });
 
 app.get("/topics/2", function (req, res) {
-	var thisPath = path.join(views, "betterTeam.html")
+	var thisPath = path.join(views, "betterTeam.html");
 	res.sendFile(thisPath);
 });
 
 app.get("/topics/3", function (req, res) {
-	var thisPath = path.join(views, "sgBattle.html")
+	var thisPath = path.join(views, "sgBattle.html");
 	res.sendFile(thisPath);
 });
 
@@ -137,7 +137,7 @@ io.sockets.on("connection", function(socket) {
 
 	function updateNicknames() {
 		io.sockets.emit("usernames", nicknames);
-	}
+	};
 
 	socket.on("send message", function(data) {
 		io.sockets.emit("new message", {msg: data, nick: socket.nickname});
@@ -147,10 +147,9 @@ io.sockets.on("connection", function(socket) {
 		if (!socket.nickname) return;
 		nicknames.splice(nicknames.indexOf(socket.nickname), 1);
 		updateNicknames();
-	})
-
-})
+	});
+});
 
 server.listen(process.env.PORT || 3000, function() {
 	console.log("running on localhost:3000");
-})
+});

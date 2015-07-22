@@ -24,9 +24,9 @@ userSchema.statics.createSecure = function (name, password, cb) {
 			that.create({
 				name: name,
 				passwordDigest: hash
-			}, cb)
+			}, cb);
 		});
-	})
+	});
 };
 
 userSchema.statics.encryptPassword = function (password) {
@@ -45,11 +45,11 @@ userSchema.statics.authenticate = function(name, password, cb) {
 			cb(null, user);
 		}
 	})
-}
+};
 
 userSchema.methods.checkPassword = function(password) {
 	return bcrypt.compareSync(password, this.passwordDigest);
-}
+};
 
 var User = mongoose.model("User", userSchema);
 module.exports = User;
