@@ -8,14 +8,9 @@ var express = require("express"),
 var app = express();
 var server = require("http").createServer(app);
 var io = require("socket.io").listen(server);
-var d3 = require("d3");
 var nicknames = [];
 
-app.use(function(){
-	express.static("public").apply(express, arguments, arguments[1].headers);
-});
-
-app.use(express.static("bower_components"));
+app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({extended: true}));
 
