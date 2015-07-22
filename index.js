@@ -15,13 +15,13 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(session({
-  secret: "super secret",
+  secret: "Spencer's sports secret",
   resave: false,
   saveUninitialized: true
 }));
 
-app.use("/", function (req, res, next) {
-
+var sessionHelp = function (req, res, next) {
+  
   req.login = function (user) {
     req.session.userId = user._id;
   };
@@ -40,7 +40,9 @@ app.use("/", function (req, res, next) {
   };
 
   next(); 
-});
+};	
+
+app.use(sessionHelp);
 
 var views = path.join(__dirname, "views");
 
